@@ -1,0 +1,46 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Форма для авторизации</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <script src="../assets/js/script.js"></script>
+  </head>
+  <body>
+    <div class="dws-wrapper">
+        <div class="dws-form">
+            <label class="tab active" title="Вкладка 1">Авторизация</label>
+            <label class="tab" title="Вкладка 2">Регистрация</label>
+
+            <form id="form-1" class="tab-form active">
+              <input class="input" type="email" placeholder="Введите E-mail">
+              <input class="input" type="password" placeholder="Введите пароль">
+              <a href="#" class="button">Войти</a>
+              <ul class="social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-vk"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+              </ul>
+              <a href="#">Я забыл свой E-mail или пароль</a>
+            </form>
+            <form id="form-2" class="tab-form">
+              <input class="input" type="email" placeholder="Введите E-mail адрес">
+              <input class="input" type="text" placeholder="Введите свое имя">
+              <input class="input" type="password" placeholder="Введите пароль">
+              <a href="#" class="button">Регистрация</a>
+              <div class="recover">
+                <input class="doc" type="checkbox">
+                <label class="doc">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+              </div>
+            </form>
+        </div>
+    </div>
+  </body>
+</html>
+{{end}}
